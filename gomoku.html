@@ -1,0 +1,52 @@
+<!-- *********************************************************************** -->
+<!--                                                                         -->
+<!--                                                      :::      ::::::::  -->
+<!-- gomoku.html                                        :+:      :+:    :+:  -->
+<!--                                                  +:+ +:+         +:+    -->
+<!-- By: lvasseur <marvin@42.fr>                    +#+  +:+       +#+       -->
+<!--                                              +#+#+#+#+#+   +#+          -->
+<!-- Created: 2019/08/05 19:50:28 by lvasseur          #+#    #+#            -->
+<!-- Updated: 2019/08/05 19:50:32 by lvasseur         ###   ########.fr      -->
+<!--                                                                         -->
+<!-- *********************************************************************** -->
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>gomoku</title>
+
+        <link rel="stylesheet" href="gomoku.css"/>
+    </head>
+    <body>
+        <h1 id="Title">GOMOKU</h1>
+
+        <!--Scoring + time-->
+        <canvas id="canvas1" width="1000" height="200">Votre navigateur est trop vieux</canvas>
+        <canvas id="game" width="700" height="700" style="border:1px solid black;"></canvas>
+        <!--grid-->
+        <div>
+            <input type="checkbox" id="apocalypse" name="apocalypse">
+            <label for="apocalypse">apocalypse</label>
+        </div>
+         <div>
+            <input type="checkbox" id="leveling" name="leveling">
+            <label for="leveling">leveling</label>
+        </div>
+        <br>
+        <div>
+            <input type="checkbox" id="PVP" name="PVP" onclick='javascript:onclickmydear()'>
+            <label for="PVP">PVP</label>
+        </div>
+        <div>
+            <input type="checkbox" id="IAvsIA" name="IAvsIA" onclick='javascript:onclickmytotoro()'>
+            <label for="IAvsIA">IAvsIA</label>
+        </div>
+
+        <script type="text/javascript" src="game.js"></script>
+        <script type="text/javascript" src="getPrioritiesSide.js"></script>
+        <script type="text/javascript" src="game_playable.js"></script>
+        <script type="text/javascript" src="minmax.js"></script>
+        <script type="text/javascript" src="heuristique.js"></script>
+    </body>
+</html>

@@ -1,0 +1,36 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    gomoku.css                                         :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: lvasseur <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/08/05 19:50:19 by lvasseur          #+#    #+#              #
+#    Updated: 2019/08/05 19:50:22 by lvasseur         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+#Title
+{
+    position: relative;
+    text-align: center;
+}
+
+#canvas1
+{
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+#game
+{
+    margin-top: 130px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
